@@ -68,7 +68,7 @@ mod tests {
     }
 
     #[test]
-    fn day_2_part2_solution() {
+    fn day_2_part_2_solution() {
         let commands: Vec<Command> = data::read_input_data("./data/d02/data.txt").expect("Invalid input data");
         let submarine_position = calculate_submarine_position_with_aim(&commands);
         let position_multiplication = submarine_position.horizontal_position * submarine_position.depth;
